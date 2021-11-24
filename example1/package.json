@@ -1,0 +1,11 @@
+{
+	"description": "webpack with cli",
+	"packageManager": "pnpm",
+	"scripts": {
+		"start": "webpack build ./src/index.js -o ./dist --mode production"
+	},
+	"devDependencies": {
+		"webpack": "^5.62.2",
+		"webpack-cli": "^4.9.1"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"description": "lint config",
+	"packageManager": "pnpm",
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"editorconfig-checker": "^4.0.2",
+		"eslint": "^8.3.0",
+		"lint-staged": "^12.1.2",
+		"simple-git-hooks": "^2.7.0"
+	},
+	"lint-staged": {
+		"*": "editorconfig-checker",
+		"*.js": "cross-env NODE_ENV=production eslint"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	}
+}
